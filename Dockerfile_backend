@@ -13,5 +13,7 @@ RUN npm install
 # Copy backend source code
 COPY quirknotes/backend ./
 
+EXPOSE 4000
+
 # Build backend
 CMD [ "npm", "start" ]
